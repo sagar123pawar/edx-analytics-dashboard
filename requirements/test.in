@@ -1,7 +1,7 @@
 # Test dependencies go here.
 -r base.txt
 
-bok-choy==0.7.0
+-e git+https://github.com/edx/bok-choy.git@54217ed7b54a3d48873b9f90901bfd1ea991eedc#egg=bok-choy==0.9.3
 coverage==4.4.1
 ddt==1.1.1
 django-dynamic-fixture==1.9.5
