@@ -15,6 +15,8 @@ ln -s /opt/firefox/firefox /usr/bin/firefox
 cd /edx/app/insights/edx_analytics_dashboard
 export PATH=$PATH:$PWD/node_modules/.bin
 
+export GECKODRIVER_VERSION="0.8.0"
+
 # Output node.js version
 node --version
 npm --version
