@@ -4,4 +4,4 @@
 #
 #    make upgrade
 #
-newrelic==4.14.0.115
+newrelic==4.16.0.116

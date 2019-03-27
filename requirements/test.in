@@ -17,6 +17,6 @@ pep257==0.7.0
 pep8==1.7.0
 pylint==1.7.1
 logilab-common==1.4.0
-selenium>=2.44.0,<3.0.0
+selenium>=2.44.0
 sure==1.4.6
 testfixtures==4.14.3
