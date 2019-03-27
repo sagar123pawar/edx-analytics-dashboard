@@ -13,7 +13,7 @@ mv -f /usr/bin/firefox /usr/bin/firefox_default
 ln -s /opt/firefox/firefox /usr/bin/firefox
 
 # Need geckodriver
-wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
+curl -O https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
 mkdir geckodriver
 tar -xzf geckodriver-v0.24.0-linux64.tar.gz -C geckodriver
 export PATH=$PATH:$PWD/geckodriver
