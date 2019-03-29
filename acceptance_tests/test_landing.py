@@ -1,6 +1,6 @@
 from bok_choy.web_app_test import WebAppTest
 
-from acceptance_tests import OPEN_SOURCE_URL, RESEARCH_URL, SUPPORT_EMAIL, SHOW_LANDING_RESEARCH
+from acceptance_tests import OPEN_SOURCE_URL, RESEARCH_URL, SUPPORT_EMAIL, SHOW_LANDING_RESEARCH, DASHBOARD_SERVER_URL
 from acceptance_tests.mixins import LoginMixin, LogoutMixin, FooterLegalMixin, PageTestMixin
 from acceptance_tests.pages import LandingPage
 
@@ -16,8 +16,7 @@ class LandingTests(PageTestMixin, LoginMixin, LogoutMixin, FooterLegalMixin, Web
     def test_page(self):
         super(LandingTests, self).test_page()
         # landing page will not be viewable by logged in users
-        self.login_with_lms()
-        self.page.browser.get(self.page.page_url)
+        self.page.browser.get(DASHBOARD_SERVER_URL)
         self.assertFalse(self.page.is_browser_on_page())
 
         # landing page only accessible to logged out users
